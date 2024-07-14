@@ -21,29 +21,21 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-int timeG1 = 0;
-int timeG2 = 0;
-int timeB = 0;
+int time1 = 0;
+int time2 = 0;
 
 void Button(){
 	if(HAL_GPIO_ReadPin(GPIOC, B1_Pin)){
-		if(HAL_GetTick() - timeG1 >=500){
+		if(HAL_GetTick() - time1 >=500){
 			HAL_GPIO_TogglePin(GPIOA, LD2_Pin);
-			timeG1 = HAL_GetTick();
+			time1 = HAL_GetTick();
 		}
 	}
 	else{
-		if (HAL_GetTick() - timeG2 >= 300) {
+		if (HAL_GetTick() - time2 >= 300) {
 			HAL_GPIO_TogglePin(GPIOA, LD2_Pin);
-			timeG2 = HAL_GetTick();
+			time2 = HAL_GetTick();
 		}
-	}
-}
-
-void BLUE_LD(){
-	if(HAL_GetTick() - timeB >= 500){
-		HAL_GPIO_TogglePin(GPIOA, BLUE_Pin);
-		timeB = HAL_GetTick();
 	}
 }
 /* USER CODE END Includes */
@@ -121,8 +113,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  BLUE_LD();
-	  Button();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

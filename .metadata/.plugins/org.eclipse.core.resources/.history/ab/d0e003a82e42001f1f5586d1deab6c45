@@ -98,7 +98,7 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
+  BLUE_LD();
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
@@ -121,8 +121,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  BLUE_LD();
-	  Button();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
