@@ -1,0 +1,109 @@
+2024-07-20 00:04:48,422 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-20 00:04:51,499 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-20 00:04:57,068 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 432468928 Bytes (660602880)
+2024-07-20 00:04:58,067 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 466068992 Bytes (660602880)
+2024-07-20 00:05:07,359 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 234710288 Bytes (660602880)
+2024-07-20 00:05:07,603 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-07-20 00:05:07,603 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-07-20 00:05:07,603 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-07-20 00:05:07,603 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-07-20 00:05:07,603 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-07-20 00:05:07,604 [INFO] CodeGenerator:807 - code generatio: config db path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-07-20 00:05:07,673 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\license.tmp_save
+2024-07-20 00:05:07,732 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\license.tmp
+2024-07-20 00:05:07,746 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\gpio.tmp_save
+2024-07-20 00:05:07,803 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\gpio.tmp
+2024-07-20 00:05:07,840 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c_save
+2024-07-20 00:05:07,901 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c
+2024-07-20 00:05:07,907 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h_save
+2024-07-20 00:05:07,968 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h
+2024-07-20 00:05:07,981 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c_save
+2024-07-20 00:05:08,063 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c
+2024-07-20 00:05:08,067 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\system.tmp_save
+2024-07-20 00:05:08,113 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\system.tmp
+2024-07-20 00:05:08,125 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-07-20 00:05:08,189 [INFO] CodeEngine:335 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h
+2024-07-20 00:05:08,206 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-07-20 00:05:08,207 [WARN] CodeGenerator:4002 - IP not found : null
+2024-07-20 00:05:08,214 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\main.h_save
+2024-07-20 00:05:08,283 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\main.h
+2024-07-20 00:05:08,290 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\main.c_save
+2024-07-20 00:05:08,381 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\main.c
+2024-07-20 00:05:08,678 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 179mS.
+2024-07-20 00:05:08,680 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-07-20 00:05:08,736 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-07-20 00:05:09,563 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 883mS.
+2024-07-20 00:05:09,564 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-07-20 00:05:09,567 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-07-20 00:15:34,472 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-20 00:18:46,324 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 240076568 Bytes (660602880)
+2024-07-20 00:18:55,139 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 259946184 Bytes (660602880)
+2024-07-20 00:18:55,642 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 291266080 Bytes (660602880)
+2024-07-20 00:18:55,831 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-07-20 00:18:55,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-07-20 00:18:55,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-07-20 00:18:55,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-07-20 00:18:55,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-07-20 00:18:55,833 [INFO] CodeGenerator:807 - code generatio: config db path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-07-20 00:18:55,884 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\license.tmp_save
+2024-07-20 00:18:55,933 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\license.tmp
+2024-07-20 00:18:55,946 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\gpio.tmp_save
+2024-07-20 00:18:55,994 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\gpio.tmp
+2024-07-20 00:18:56,027 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c_save
+2024-07-20 00:18:56,092 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c
+2024-07-20 00:18:56,097 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h_save
+2024-07-20 00:18:56,148 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h
+2024-07-20 00:18:56,159 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c_save
+2024-07-20 00:18:56,237 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c
+2024-07-20 00:18:56,242 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\system.tmp_save
+2024-07-20 00:18:56,290 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\system.tmp
+2024-07-20 00:18:56,298 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-07-20 00:18:56,352 [INFO] CodeEngine:335 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h
+2024-07-20 00:18:56,366 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-07-20 00:18:56,367 [WARN] CodeGenerator:4002 - IP not found : null
+2024-07-20 00:18:56,374 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\main.h_save
+2024-07-20 00:18:56,426 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\main.h
+2024-07-20 00:18:56,431 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\main.c_save
+2024-07-20 00:18:56,508 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\main.c
+2024-07-20 00:18:56,795 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 174mS.
+2024-07-20 00:18:56,797 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-07-20 00:18:56,854 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-07-20 00:18:57,596 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 799mS.
+2024-07-20 00:18:57,597 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-07-20 00:18:57,599 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-07-20 00:19:01,103 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-07-20 00:25:43,129 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 394847160 Bytes (660602880)
+2024-07-20 00:25:48,976 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 416867256 Bytes (660602880)
+2024-07-20 00:25:50,363 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 470866872 Bytes (660602880)
+2024-07-20 00:25:50,470 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-07-20 00:25:50,470 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-07-20 00:25:50,470 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-07-20 00:25:50,471 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-07-20 00:25:50,471 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-07-20 00:25:50,471 [INFO] CodeGenerator:807 - code generatio: config db path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-07-20 00:25:50,558 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\license.tmp_save
+2024-07-20 00:25:50,608 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\license.tmp
+2024-07-20 00:25:50,620 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\gpio.tmp_save
+2024-07-20 00:25:50,670 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\gpio.tmp
+2024-07-20 00:25:50,700 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c_save
+2024-07-20 00:25:50,755 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c
+2024-07-20 00:25:50,760 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h_save
+2024-07-20 00:25:50,811 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h
+2024-07-20 00:25:50,821 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c_save
+2024-07-20 00:25:50,892 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c
+2024-07-20 00:25:50,895 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\system.tmp_save
+2024-07-20 00:25:50,941 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\system.tmp
+2024-07-20 00:25:50,951 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-07-20 00:25:51,007 [INFO] CodeEngine:335 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h
+2024-07-20 00:25:51,019 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-07-20 00:25:51,020 [WARN] CodeGenerator:4002 - IP not found : null
+2024-07-20 00:25:51,026 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\main.h_save
+2024-07-20 00:25:51,080 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\main.h
+2024-07-20 00:25:51,085 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\main.c_save
+2024-07-20 00:25:51,161 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\main.c
+2024-07-20 00:25:51,445 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 173mS.
+2024-07-20 00:25:51,448 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-07-20 00:25:51,501 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-07-20 00:25:52,147 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 699mS.
+2024-07-20 00:25:52,148 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-07-20 00:25:52,150 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
