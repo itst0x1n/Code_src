@@ -22,10 +22,10 @@
 #include "gpio.h"
 #include <stdio.h>
 #include <string.h>
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 const uint8_t buff[] = "Goida";
-uint8_t flag = 0;
 
 
 /* USER CODE END Includes */
@@ -93,7 +93,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_UART_Transmit_IT(&huart1, buff, 6);
+
 
   /* USER CODE END 2 */
 
@@ -101,8 +101,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-
+	  HAL_UART_Transmit(&huart1, buff, strlen((char *)buff), 1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

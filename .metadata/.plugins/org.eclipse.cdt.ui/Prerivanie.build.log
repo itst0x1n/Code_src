@@ -1,10 +1,10 @@
-16:26:21 **** Incremental Build of configuration Debug for project Prerivanie ****
+16:59:11 **** Incremental Build of configuration Debug for project Prerivanie ****
 make -j12 all 
 arm-none-eabi-size  Prerivanie.elf 
    text	   data	    bss	    dec	    hex	filename
-   8020	     12	   1644	   9676	   25cc	Prerivanie.elf
+  10116	     12	   1644	  11772	   2dfc	Prerivanie.elf
 Finished building: default.size.stdout
  
 
-16:26:22 Build Finished. 0 errors, 0 warnings. (took 501ms)
+16:59:11 Build Finished. 0 errors, 0 warnings. (took 579ms)
 
