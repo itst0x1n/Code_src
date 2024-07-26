@@ -18,18 +18,16 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "tim.h"
+#include "usart.h"
 #include "gpio.h"
+#include <stdio.h>
+#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-uint16_t pwm = 1;
-int kfc = 1;
+const uint8_t buff[] = "Goida";
 
-void Set_PWM_Duty_Cycle(TIM_HandleTypeDef *htim, uint32_t Channel, uint16_t pwm)
-{
-    __HAL_TIM_SET_COMPARE(htim, Channel, pwm);
-}
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -71,6 +69,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -91,26 +91,17 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_TIM1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		if (pwm == 0)
-			kfc = 1;
-		if (pwm == 1000)
-			kfc = -1;
-
-		if (HAL_GetTick() % 100 == 0) {
-			pwm += kfc;
-		}
-
-		Set_PWM_Duty_Cycle(&htim1, TIM_CHANNEL_3, pwm);
+	  HAL_UART_Transmit(&huart1, buff, strlen((char *)buff), 1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
