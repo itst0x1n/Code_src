@@ -23,7 +23,6 @@
 #include "main.h"
 #include "cmsis_os.h"
 
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "usart.h"
@@ -32,7 +31,9 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+void Set_PWM_Duty_Cycle(TIM_HandleTypeDef *htim, uint32_t Channel, uint16_t pwm)
+{
+    __HAL_TIM_SET_COMPARE(htim, Channel, pwm);
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -47,7 +48,8 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-uint8_t ledState = 0;
+uint8_t ledState[2];
+uint8_t pwm = 0;
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -56,10 +58,17 @@ const osThreadAttr_t defaultTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
-/* Definitions for LedTask */
-osThreadId_t LedTaskHandle;
-const osThreadAttr_t LedTask_attributes = {
-  .name = "LedTask",
+/* Definitions for ZeroCheck */
+osThreadId_t ZeroCheckHandle;
+const osThreadAttr_t ZeroCheck_attributes = {
+  .name = "ZeroCheck",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for myTask03 */
+osThreadId_t myTask03Handle;
+const osThreadAttr_t myTask03_attributes = {
+  .name = "myTask03",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
@@ -70,7 +79,8 @@ const osThreadAttr_t LedTask_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
-void StartLedTask(void *argument);
+void StartZeroCheck(void *argument);
+void StartTask03(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -104,8 +114,11 @@ void MX_FREERTOS_Init(void) {
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
-  /* creation of LedTask */
-  LedTaskHandle = osThreadNew(StartLedTask, NULL, &LedTask_attributes);
+  /* creation of ZeroCheck */
+  ZeroCheckHandle = osThreadNew(StartZeroCheck, NULL, &ZeroCheck_attributes);
+
+  /* creation of myTask03 */
+  myTask03Handle = osThreadNew(StartTask03, NULL, &myTask03_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -127,55 +140,54 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-	uint8_t rxData = 0;
+
   /* Infinite loop */
   for(;;)
   {
-	  if(HAL_UART_Receive(&huart1, &rxData, 1, 1) == HAL_OK){
-		  if(rxData == 0){
-			  ledState = 0;
-		  }
-		  else{
-			  ledState = 1;
-	  }
+	  HAL_UART_Receive(&huart1, &ledState, 2, 1);
 	  osDelay(1);
-
-	  }
-  /* USER CODE END StartDefaultTask */
   }
+  /* USER CODE END StartDefaultTask */
 }
-/* USER CODE BEGIN Header_StartLedTask */
+
+/* USER CODE BEGIN Header_StartZeroCheck */
 /**
-* @brief Function implementing the LedTask thread.
+* @brief Function implementing the ZeroCheck thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartLedTask */
-void StartLedTask(void *argument)
+/* USER CODE END Header_StartZeroCheck */
+void StartZeroCheck(void *argument)
 {
-  /* USER CODE BEGIN StartLedTask */
-	uint16_t time = 0;
-	uint32_t counter = 0;
+  /* USER CODE BEGIN StartZeroCheck */
   /* Infinite loop */
   for(;;)
   {
-    if(ledState == 1){
-    	time = 500;
-    }
-    else if (ledState == 0){
-    	time = 100;
-    }
-
-    counter ++;
-
-    if(counter > time){
-    	counter = 0;
-    	HAL_GPIO_TogglePin(GPIOA, LD_Pin);
-    }
-
+	if(ledState[0] == 0){
+		pwm = ledState[1];
+	}
     osDelay(1);
   }
-  /* USER CODE END StartLedTask */
+  /* USER CODE END StartZeroCheck */
+}
+
+/* USER CODE BEGIN Header_StartTask03 */
+/**
+* @brief Function implementing the myTask03 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask03 */
+void StartTask03(void *argument)
+{
+  /* USER CODE BEGIN StartTask03 */
+  /* Infinite loop */
+  for(;;)
+  {
+	  Set_PWM_Duty_Cycle(&htim2, TIM_CHANNEL_3, pwm);
+	  osDelay(1);
+  }
+  /* USER CODE END StartTask03 */
 }
 
 /* Private application code --------------------------------------------------*/
