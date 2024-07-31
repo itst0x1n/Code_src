@@ -36,6 +36,9 @@ typedef struct ledBlink{
 	uint16_t pin;
 	GPIO_TypeDef* pinType;
 }LedBlink;
+
+uint16_t a = 0;
+char b;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
