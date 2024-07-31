@@ -23,16 +23,21 @@
 #include "main.h"
 #include "cmsis_os.h"
 
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "usart.h"
+#include "string.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+typedef struct ledBlink{
+	uint16_t blinkTime;
+	uint16_t pin;
+}LedBlink;
 
+uint16_t a = 0;
+char b;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -47,7 +52,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-uint8_t ledState = 0;
+
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -56,10 +61,10 @@ const osThreadAttr_t defaultTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
-/* Definitions for LedTask */
-osThreadId_t LedTaskHandle;
-const osThreadAttr_t LedTask_attributes = {
-  .name = "LedTask",
+/* Definitions for ledBlink2 */
+osThreadId_t ledBlink2Handle;
+const osThreadAttr_t ledBlink2_attributes = {
+  .name = "ledBlink2",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
@@ -70,7 +75,7 @@ const osThreadAttr_t LedTask_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
-void StartLedTask(void *argument);
+void StartLedBlink2(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -104,8 +109,8 @@ void MX_FREERTOS_Init(void) {
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
-  /* creation of LedTask */
-  LedTaskHandle = osThreadNew(StartLedTask, NULL, &LedTask_attributes);
+  /* creation of ledBlink2 */
+  ledBlink2Handle = osThreadNew(StartLedBlink2, NULL, &ledBlink2_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -127,55 +132,38 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-	uint8_t rxData = 0;
+	LedBlink ledBlink1;
+	ledBlink1.blinkTime = 500;
+	ledBlink1.pin = LD_Pin;
   /* Infinite loop */
   for(;;)
   {
-	  if(HAL_UART_Receive(&huart1, &rxData, 1, 1) == HAL_OK){
-		  if(rxData == 0){
-			  ledState = 0;
-		  }
-		  else{
-			  ledState = 1;
-	  }
-	  osDelay(1);
-
-	  }
-  /* USER CODE END StartDefaultTask */
+	  HAL_GPIO_TogglePin(GPIOA, ledBlink1.pin);
+	  osDelay(ledBlink1.blinkTime);
   }
+  /* USER CODE END StartDefaultTask */
 }
-/* USER CODE BEGIN Header_StartLedTask */
+
+/* USER CODE BEGIN Header_StartLedBlink2 */
 /**
-* @brief Function implementing the LedTask thread.
+* @brief Function implementing the ledBlink2 thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartLedTask */
-void StartLedTask(void *argument)
+/* USER CODE END Header_StartLedBlink2 */
+void StartLedBlink2(void *argument)
 {
-  /* USER CODE BEGIN StartLedTask */
-	uint16_t time = 0;
-	uint32_t counter = 0;
+  /* USER CODE BEGIN StartLedBlink2 */
+	LedBlink ledBlink2;
+	ledBlink2.blinkTime = 100;
+	ledBlink2.pin = LD2_Pin;
   /* Infinite loop */
   for(;;)
   {
-    if(ledState == 1){
-    	time = 500;
-    }
-    else if (ledState == 0){
-    	time = 100;
-    }
-
-    counter ++;
-
-    if(counter > time){
-    	counter = 0;
-    	HAL_GPIO_TogglePin(GPIOA, LD_Pin);
-    }
-
-    osDelay(1);
+	 HAL_GPIO_TogglePin(GPIOA, ledBlink2.pin);
+     osDelay(ledBlink2.blinkTime);
   }
-  /* USER CODE END StartLedTask */
+  /* USER CODE END StartLedBlink2 */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -7,5 +7,5 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:500mc\ Debug/activeLaunchMode=r
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:500mc\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ButtonAndSecondLD\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ButtonAndSecondLD\ Debug/activeLaunchTarget=null\:---
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Prerivanie\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Prerivanie\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Second\ Debug/activeLaunchMode=run
