@@ -34,7 +34,6 @@
 typedef struct ledBlink{
 	uint16_t blinkTime;
 	uint16_t pin;
-	GPIO_TypeDef* pinType;
 }LedBlink;
 
 uint16_t a = 0;
@@ -134,13 +133,12 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
 	LedBlink ledBlink1;
-	ledBlink1.blinkTime = 1000;
+	ledBlink1.blinkTime = 500;
 	ledBlink1.pin = LD_Pin;
-	ledBlink1.pinType = GPIOA;
   /* Infinite loop */
   for(;;)
   {
-	  HAL_GPIO_TogglePin(ledBlink1.pinType, ledBlink1.pin);
+	  HAL_GPIO_TogglePin(GPIOA, ledBlink1.pin);
 	  osDelay(ledBlink1.blinkTime);
   }
   /* USER CODE END StartDefaultTask */
@@ -157,13 +155,12 @@ void StartLedBlink2(void *argument)
 {
   /* USER CODE BEGIN StartLedBlink2 */
 	LedBlink ledBlink2;
-	ledBlink2.blinkTime = 500;
+	ledBlink2.blinkTime = 100;
 	ledBlink2.pin = LD2_Pin;
-	ledBlink2.pinType = GPIOA;
   /* Infinite loop */
   for(;;)
   {
-	 HAL_GPIO_TogglePin(ledBlink2.pinType, ledBlink2.pin);
+	 HAL_GPIO_TogglePin(GPIOA, ledBlink2.pin);
      osDelay(ledBlink2.blinkTime);
   }
   /* USER CODE END StartLedBlink2 */

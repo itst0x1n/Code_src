@@ -134,7 +134,7 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
 	LedBlink ledBlink1;
-	ledBlink1.blinkTime = 1000;
+	ledBlink1.blinkTime = 500;
 	ledBlink1.pin = LD_Pin;
 	ledBlink1.pinType = GPIOA;
   /* Infinite loop */
@@ -157,7 +157,7 @@ void StartLedBlink2(void *argument)
 {
   /* USER CODE BEGIN StartLedBlink2 */
 	LedBlink ledBlink2;
-	ledBlink2.blinkTime = 500;
+	ledBlink2.blinkTime = 100;
 	ledBlink2.pin = LD2_Pin;
 	ledBlink2.pinType = GPIOA;
   /* Infinite loop */
