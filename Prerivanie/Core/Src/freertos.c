@@ -31,9 +31,10 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-void Set_PWM_Duty_Cycle(TIM_HandleTypeDef *htim, uint32_t Channel, uint16_t pwm)
-{
-    __HAL_TIM_SET_COMPARE(htim, Channel, pwm);
+uint8_t dataReceive;
+#define bitcheck(byte,nbit) ((byte) & (1<<(nbit)))
+uint8_t data[3];
+uint8_t pwm;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -48,8 +49,7 @@ void Set_PWM_Duty_Cycle(TIM_HandleTypeDef *htim, uint32_t Channel, uint16_t pwm)
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-uint8_t ledState[2];
-uint8_t pwm = 0;
+
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -58,17 +58,24 @@ const osThreadAttr_t defaultTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
-/* Definitions for ZeroCheck */
-osThreadId_t ZeroCheckHandle;
-const osThreadAttr_t ZeroCheck_attributes = {
-  .name = "ZeroCheck",
+/* Definitions for bitChecking */
+osThreadId_t bitCheckingHandle;
+const osThreadAttr_t bitChecking_attributes = {
+  .name = "bitChecking",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
-/* Definitions for myTask03 */
-osThreadId_t myTask03Handle;
-const osThreadAttr_t myTask03_attributes = {
-  .name = "myTask03",
+/* Definitions for pwmSet */
+osThreadId_t pwmSetHandle;
+const osThreadAttr_t pwmSet_attributes = {
+  .name = "pwmSet",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for ledBlink */
+osThreadId_t ledBlinkHandle;
+const osThreadAttr_t ledBlink_attributes = {
+  .name = "ledBlink",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
@@ -79,8 +86,9 @@ const osThreadAttr_t myTask03_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
-void StartZeroCheck(void *argument);
-void StartTask03(void *argument);
+void StartBitChecking(void *argument);
+void StartPWM_Set(void *argument);
+void StartLedBlink(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -114,11 +122,14 @@ void MX_FREERTOS_Init(void) {
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
-  /* creation of ZeroCheck */
-  ZeroCheckHandle = osThreadNew(StartZeroCheck, NULL, &ZeroCheck_attributes);
+  /* creation of bitChecking */
+  bitCheckingHandle = osThreadNew(StartBitChecking, NULL, &bitChecking_attributes);
 
-  /* creation of myTask03 */
-  myTask03Handle = osThreadNew(StartTask03, NULL, &myTask03_attributes);
+  /* creation of pwmSet */
+  pwmSetHandle = osThreadNew(StartPWM_Set, NULL, &pwmSet_attributes);
+
+  /* creation of ledBlink */
+  ledBlinkHandle = osThreadNew(StartLedBlink, NULL, &ledBlink_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -140,54 +151,83 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-
   /* Infinite loop */
   for(;;)
   {
-	  HAL_UART_Receive(&huart1, &ledState, 2, 1);
-	  osDelay(1);
+	HAL_UART_Receive(&huart1, &dataReceive, 3, 1);
+    osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
 }
 
-/* USER CODE BEGIN Header_StartZeroCheck */
+/* USER CODE BEGIN Header_StartBitChecking */
 /**
-* @brief Function implementing the ZeroCheck thread.
+* @brief Function implementing the bitChecking thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartZeroCheck */
-void StartZeroCheck(void *argument)
+/* USER CODE END Header_StartBitChecking */
+void StartBitChecking(void *argument)
 {
-  /* USER CODE BEGIN StartZeroCheck */
+  /* USER CODE BEGIN StartBitChecking */
+	int count;
   /* Infinite loop */
   for(;;)
   {
-	if(ledState[0] == 0){
-		pwm = ledState[1];
+	if(bitcheck(dataReceive, 7)){
+		count++;
+		data[count] = dataReceive;
+	}
+	else{
+		count = 0;
+		data[count] = dataReceive;
 	}
     osDelay(1);
   }
-  /* USER CODE END StartZeroCheck */
+  /* USER CODE END StartBitChecking */
 }
 
-/* USER CODE BEGIN Header_StartTask03 */
+/* USER CODE BEGIN Header_StartPWM_Set */
 /**
-* @brief Function implementing the myTask03 thread.
+* @brief Function implementing the pwmSet thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartTask03 */
-void StartTask03(void *argument)
+/* USER CODE END Header_StartPWM_Set */
+void StartPWM_Set(void *argument)
 {
-  /* USER CODE BEGIN StartTask03 */
+  /* USER CODE BEGIN StartPWM_Set */
   /* Infinite loop */
   for(;;)
   {
-	  Set_PWM_Duty_Cycle(&htim2, TIM_CHANNEL_3, pwm);
-	  osDelay(1);
+	if(bitcheck(data[0]<<1, 7)){
+		pwm = data[1]&255;
+	}
+	else{
+		pwm = data[1]&127;
+	}
+    osDelay(1);
   }
-  /* USER CODE END StartTask03 */
+  /* USER CODE END StartPWM_Set */
+}
+
+/* USER CODE BEGIN Header_StartLedBlink */
+/**
+* @brief Function implementing the ledBlink thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartLedBlink */
+void StartLedBlink(void *argument)
+{
+  /* USER CODE BEGIN StartLedBlink */
+  /* Infinite loop */
+  for(;;)
+  {
+	Set_PWM_Duty_Cycle(&htim1, TIM_CHANNEL_3, pwm);
+    osDelay(1);
+  }
+  /* USER CODE END StartLedBlink */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -1,0 +1,31 @@
+2024-08-01 01:03:10,018 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 96
+2024-08-01 01:03:10,028 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 24576
+2024-08-01 01:03:25,528 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:03:25,528 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:03:25,528 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:03:25,528 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:03:25,528 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:03:25,528 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:03:25,528 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:03:25,528 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:03:25,528 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:03:30,754 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 96
+2024-08-01 01:03:30,754 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 24576
+2024-08-01 01:03:46,284 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:03:46,284 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:03:46,284 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:03:46,284 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:03:46,284 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:03:46,284 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:03:50,793 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 96
+2024-08-01 01:03:50,793 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 24576
+2024-08-01 01:04:12,098 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:04:12,099 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:04:12,099 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:04:12,099 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:04:12,099 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:04:12,099 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:04:12,099 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-08-01 01:04:12,099 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-08-01 01:04:12,099 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
+2024-08-01 01:04:14,030 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 400183432 Bytes (642777088)

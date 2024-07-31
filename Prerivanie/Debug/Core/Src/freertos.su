@@ -1,2 +1,4 @@
-../Core/Src/freertos.c:73:6:MX_FREERTOS_Init	8	static
-../Core/Src/freertos.c:115:6:StartDefaultTask	16	static
+../Core/Src/freertos.c:92:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:140:6:StartDefaultTask	16	static
+../Core/Src/freertos.c:159:6:StartBitChecking	24	static
+../Core/Src/freertos.c:186:6:StartPWM_Set	16	static
