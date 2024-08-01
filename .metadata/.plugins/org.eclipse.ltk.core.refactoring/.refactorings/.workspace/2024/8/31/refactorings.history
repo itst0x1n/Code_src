@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Prerivanie/Core/ledBlink&apos;" deleteContents="false" description="Delete resource &apos;Prerivanie/Core/ledBlink&apos;" element1="/Prerivanie/Core/ledBlink" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722534776061"/>&#x0A;<refactoring comment="Delete resource &apos;Prerivanie/Core/ledBlink&apos;" deleteContents="false" description="Delete resource &apos;Prerivanie/Core/ledBlink&apos;" element1="/Prerivanie/Core/ledBlink" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1722534807658"/>
+</session>

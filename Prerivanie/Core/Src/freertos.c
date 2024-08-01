@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "string.h"
+#include "ledblink.h"
 
 /* USER CODE END Includes */
 
@@ -130,15 +131,12 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-	LedBlink ledBlink1;
-	ledBlink1.blinkTime = 1000;
-	ledBlink1.pin = LD_Pin;
-	ledBlink1.pinType = GPIOA;
+	LedBlink ledBlink1 = {500, LD_Pin, GPIOA};
   /* Infinite loop */
   for(;;)
   {
-	  HAL_GPIO_TogglePin(ledBlink1.pinType, ledBlink1.pin);
-	  osDelay(ledBlink1.blinkTime);
+	  ledBlink(ledBlink1.blinkTime, ledBlink1.pin, ledBlink1.pinType);
+	  osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
 }
@@ -153,15 +151,12 @@ void StartDefaultTask(void *argument)
 void StartLedBlink2(void *argument)
 {
   /* USER CODE BEGIN StartLedBlink2 */
-	LedBlink ledBlink2;
-	ledBlink2.blinkTime = 500;
-	ledBlink2.pin = LD2_Pin;
-	ledBlink2.pinType = GPIOA;
+	LedBlink ledBlink2 = {100, LD2_Pin, GPIOA};
   /* Infinite loop */
   for(;;)
   {
-	 HAL_GPIO_TogglePin(ledBlink2.pinType, ledBlink2.pin);
-     osDelay(ledBlink2.blinkTime);
+	 ledBlink(ledBlink2.blinkTime, ledBlink2.pin, ledBlink2.pinType);
+     osDelay(1);
   }
   /* USER CODE END StartLedBlink2 */
 }
