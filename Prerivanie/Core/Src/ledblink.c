@@ -9,8 +9,10 @@
 #include "cmsis_os.h"
 
 
-void ledBlink(int blinkTime, int pin, GPIO_TypeDef* pinType){
-	HAL_GPIO_TogglePin(pinType, pin);
-	osDelay(blinkTime);
+
+void ledBlink(LedBlink *blink){
+	HAL_GPIO_TogglePin(blink -> pinType, blink -> pin);
+	osDelay(blink -> blinkTime);
  }
+
 

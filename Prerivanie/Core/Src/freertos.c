@@ -32,11 +32,8 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-typedef struct ledBlink{
-	uint16_t blinkTime;
-	uint16_t pin;
-	GPIO_TypeDef* pinType;
-}LedBlink;
+LedBlink ledBlink1 = {100, LD_Pin, GPIOA};
+LedBlink ledBlink2 = {500, LD2_Pin, GPIOA};
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -131,11 +128,11 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-	LedBlink ledBlink1 = {500, LD_Pin, GPIOA};
+
   /* Infinite loop */
   for(;;)
   {
-	  ledBlink(ledBlink1.blinkTime, ledBlink1.pin, ledBlink1.pinType);
+	  ledBlink(&ledBlink1);
 	  osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
@@ -151,11 +148,11 @@ void StartDefaultTask(void *argument)
 void StartLedBlink2(void *argument)
 {
   /* USER CODE BEGIN StartLedBlink2 */
-	LedBlink ledBlink2 = {100, LD2_Pin, GPIOA};
+
   /* Infinite loop */
   for(;;)
   {
-	 ledBlink(ledBlink2.blinkTime, ledBlink2.pin, ledBlink2.pinType);
+	 ledBlink(&ledBlink2);
      osDelay(1);
   }
   /* USER CODE END StartLedBlink2 */
