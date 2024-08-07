@@ -1,423 +1,214 @@
-2024-08-01 01:04:14,073 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Aug 01, 2024 1:04:14 AM java.util.prefs.WindowsPreferences WindowsRegOpenKey1
-2024-08-01 01:04:14,083 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Trying to recreate Windows registry node Software\JavaSoft\Prefs\com\st\library\analyticscore at root 0xffffffff80000001.
-2024-08-01 01:04:14,083 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
-2024-08-01 01:04:14,880 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 418475952 Bytes (642777088)
-2024-08-01 01:04:15,430 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 474626984 Bytes (642777088)
-2024-08-01 01:04:15,656 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
-2024-08-01 01:04:15,656 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
-2024-08-01 01:04:15,656 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
-2024-08-01 01:04:15,656 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
-2024-08-01 01:04:15,656 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
-2024-08-01 01:04:15,657 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
-2024-08-01 01:04:15,657 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
-2024-08-01 01:04:15,658 [INFO] CodeGenerator:807 - code generatio: config db path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
-2024-08-01 01:04:15,755 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\license.tmp_save
-2024-08-01 01:04:15,845 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\license.tmp
-2024-08-01 01:04:15,861 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\gpio.c_save
-2024-08-01 01:04:15,926 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\gpio.c
-2024-08-01 01:04:15,933 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\gpio.h_save
-2024-08-01 01:04:15,982 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\gpio.h
-2024-08-01 01:04:16,046 [INFO] Middleware:1439 - No code input for Bsp Dependency
-2024-08-01 01:04:16,054 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp_save
-2024-08-01 01:04:16,101 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp
-2024-08-01 01:04:16,105 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp_save
-2024-08-01 01:04:16,148 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp
-2024-08-01 01:04:16,152 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp_save
-2024-08-01 01:04:16,201 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp
-2024-08-01 01:04:16,205 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp_save
-2024-08-01 01:04:16,249 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp
-2024-08-01 01:04:16,253 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp_save
-2024-08-01 01:04:16,300 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp
-2024-08-01 01:04:16,303 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp_save
-2024-08-01 01:04:16,347 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp
-2024-08-01 01:04:16,350 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp_save
-2024-08-01 01:04:16,396 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp
-2024-08-01 01:04:16,400 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp_save
-2024-08-01 01:04:16,444 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp
-2024-08-01 01:04:16,448 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp_save
-2024-08-01 01:04:16,491 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp
-2024-08-01 01:04:16,497 [INFO] Middleware:1439 - No code input for Bsp Dependency
-2024-08-01 01:04:16,504 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp_save
-2024-08-01 01:04:16,546 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp
-2024-08-01 01:04:16,551 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp_save
-2024-08-01 01:04:16,595 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp
-2024-08-01 01:04:16,599 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp_save
-2024-08-01 01:04:16,642 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp
-2024-08-01 01:04:16,647 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp_save
-2024-08-01 01:04:16,690 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp
-2024-08-01 01:04:16,694 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp_save
-2024-08-01 01:04:16,740 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp
-2024-08-01 01:04:16,745 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp_save
-2024-08-01 01:04:16,790 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp
-2024-08-01 01:04:16,795 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp_save
-2024-08-01 01:04:16,844 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp
-2024-08-01 01:04:16,848 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp_save
-2024-08-01 01:04:16,893 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp
-2024-08-01 01:04:16,898 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp_save
-2024-08-01 01:04:16,950 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp
-2024-08-01 01:04:16,955 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\FreeRTOSConfig.h_save
-2024-08-01 01:04:17,012 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\FreeRTOSConfig.h
-2024-08-01 01:04:17,017 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\freertos.c_save
-2024-08-01 01:04:17,077 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\freertos.c
-2024-08-01 01:04:17,087 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\tim.c_save
-2024-08-01 01:04:17,163 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\tim.c
-2024-08-01 01:04:17,168 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\tim.h_save
-2024-08-01 01:04:17,226 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\tim.h
-2024-08-01 01:04:17,236 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\usart.c_save
-2024-08-01 01:04:17,334 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\usart.c
-2024-08-01 01:04:17,339 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\usart.h_save
-2024-08-01 01:04:17,386 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\usart.h
-2024-08-01 01:04:17,394 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c_save
-2024-08-01 01:04:17,493 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c
-2024-08-01 01:04:17,498 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h_save
-2024-08-01 01:04:17,544 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h
-2024-08-01 01:04:17,554 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c_save
-2024-08-01 01:04:17,617 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c
-2024-08-01 01:04:17,620 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\system.tmp_save
-2024-08-01 01:04:17,663 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\system.tmp
-2024-08-01 01:04:17,668 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_timebase_tim.c_save
-2024-08-01 01:04:17,718 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_timebase_tim.c
-2024-08-01 01:04:17,727 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h_save
-2024-08-01 01:04:17,778 [INFO] CodeEngine:335 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h
-2024-08-01 01:04:17,798 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\main.h_save
-2024-08-01 01:04:17,853 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\main.h
-2024-08-01 01:04:17,858 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\main.c_save
-2024-08-01 01:04:17,928 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\main.c
-2024-08-01 01:04:18,315 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 263mS.
-2024-08-01 01:04:18,318 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
-2024-08-01 01:04:18,375 [INFO] ConfigFileManager:1531 - The Die is : DIE433
-2024-08-01 01:04:19,224 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 905mS.
-2024-08-01 01:04:19,224 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
-2024-08-01 01:04:19,228 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
-2024-08-01 02:03:00,086 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Aug 01, 2024 2:03:00 AM java.util.prefs.WindowsPreferences WindowsRegOpenKey1
-2024-08-01 02:03:00,087 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Trying to recreate Windows registry node Software\JavaSoft\Prefs\stm_microxplorer at root 0xffffffff80000001.
-2024-08-01 02:03:00,087 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
-2024-08-01 02:04:32,405 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
-2024-08-01 02:04:35,710 [INFO] TasksAndQueuesTab:757 - Dynamic
-2024-08-01 02:04:35,710 [WARN] TasksAndQueuesTab:763 - 128 128
-2024-08-01 02:04:35,710 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
-2024-08-01 02:04:35,710 [INFO] TasksAndQueuesTab:757 - Dynamic
-2024-08-01 02:04:35,710 [WARN] TasksAndQueuesTab:763 - 128 128
-2024-08-01 02:04:35,710 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
-2024-08-01 02:04:35,710 [INFO] TasksAndQueuesTab:757 - Dynamic
-2024-08-01 02:04:35,710 [WARN] TasksAndQueuesTab:763 - 128 128
-2024-08-01 02:04:35,710 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
-2024-08-01 02:04:36,565 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 96
-2024-08-01 02:04:36,565 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 24576
-2024-08-01 02:04:46,991 [INFO] TasksAndQueuesTab:757 - Dynamic
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:763 - 128 128
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
-2024-08-01 02:04:46,992 [INFO] TasksAndQueuesTab:757 - Dynamic
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:763 - 128 128
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
-2024-08-01 02:04:46,992 [INFO] TasksAndQueuesTab:757 - Dynamic
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:763 - 128 128
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
-2024-08-01 02:04:46,992 [INFO] TasksAndQueuesTab:757 - Dynamic
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:763 - 128 128
-2024-08-01 02:04:46,992 [WARN] TasksAndQueuesTab:775 - max value is: 3840.0
-2024-08-01 02:04:49,413 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 236754768 Bytes (642777088)
-2024-08-01 02:04:50,994 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 254797840 Bytes (642777088)
-2024-08-01 02:04:51,556 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 306947832 Bytes (642777088)
-2024-08-01 02:04:51,829 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
-2024-08-01 02:04:51,829 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
-2024-08-01 02:04:51,830 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
-2024-08-01 02:04:51,830 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
-2024-08-01 02:04:51,830 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
-2024-08-01 02:04:51,830 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
-2024-08-01 02:04:51,830 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
-2024-08-01 02:04:51,831 [INFO] CodeGenerator:807 - code generatio: config db path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
-2024-08-01 02:04:51,901 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\license.tmp_save
-2024-08-01 02:04:51,977 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\license.tmp
-2024-08-01 02:04:51,998 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\gpio.c_save
-2024-08-01 02:04:52,061 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\gpio.c
-2024-08-01 02:04:52,067 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\gpio.h_save
-2024-08-01 02:04:52,115 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\gpio.h
-2024-08-01 02:04:52,184 [INFO] Middleware:1439 - No code input for Bsp Dependency
-2024-08-01 02:04:52,191 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp_save
-2024-08-01 02:04:52,243 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp
-2024-08-01 02:04:52,248 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp_save
-2024-08-01 02:04:52,292 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp
-2024-08-01 02:04:52,296 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp_save
-2024-08-01 02:04:52,339 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp
-2024-08-01 02:04:52,343 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp_save
-2024-08-01 02:04:52,387 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp
-2024-08-01 02:04:52,390 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp_save
-2024-08-01 02:04:52,436 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp
-2024-08-01 02:04:52,439 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp_save
-2024-08-01 02:04:52,485 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp
-2024-08-01 02:04:52,490 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp_save
-2024-08-01 02:04:52,536 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp
-2024-08-01 02:04:52,540 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp_save
-2024-08-01 02:04:52,585 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp
-2024-08-01 02:04:52,588 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp_save
-2024-08-01 02:04:52,633 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp
-2024-08-01 02:04:52,640 [INFO] Middleware:1439 - No code input for Bsp Dependency
-2024-08-01 02:04:52,646 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp_save
-2024-08-01 02:04:52,691 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_inc.tmp
-2024-08-01 02:04:52,696 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp_save
-2024-08-01 02:04:52,749 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelInit.tmp
-2024-08-01 02:04:52,753 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp_save
-2024-08-01 02:04:52,797 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_kernelStart.tmp
-2024-08-01 02:04:52,802 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp_save
-2024-08-01 02:04:52,865 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_typedefs.tmp
-2024-08-01 02:04:52,869 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp_save
-2024-08-01 02:04:52,924 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_vars.tmp
-2024-08-01 02:04:52,929 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp_save
-2024-08-01 02:04:52,976 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_pfp.tmp
-2024-08-01 02:04:52,980 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp_save
-2024-08-01 02:04:53,028 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_obj_creat.tmp
-2024-08-01 02:04:53,032 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp_save
-2024-08-01 02:04:53,093 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_default_thread.tmp
-2024-08-01 02:04:53,099 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp_save
-2024-08-01 02:04:53,150 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\rtos_threads.tmp
-2024-08-01 02:04:53,158 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\FreeRTOSConfig.h_save
-2024-08-01 02:04:53,213 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\FreeRTOSConfig.h
-2024-08-01 02:04:53,218 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\freertos.c_save
-2024-08-01 02:04:53,276 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\freertos.c
-2024-08-01 02:04:53,289 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\tim.c_save
-2024-08-01 02:04:53,362 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\tim.c
-2024-08-01 02:04:53,367 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\tim.h_save
-2024-08-01 02:04:53,413 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\tim.h
-2024-08-01 02:04:53,422 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\usart.c_save
-2024-08-01 02:04:53,485 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\usart.c
-2024-08-01 02:04:53,490 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\usart.h_save
-2024-08-01 02:04:53,536 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\usart.h
-2024-08-01 02:04:53,548 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c_save
-2024-08-01 02:04:53,646 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_it.c
-2024-08-01 02:04:53,652 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h_save
-2024-08-01 02:04:53,698 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_it.h
-2024-08-01 02:04:53,708 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c_save
-2024-08-01 02:04:53,774 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_msp.c
-2024-08-01 02:04:53,778 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\MXTmpFiles\system.tmp_save
-2024-08-01 02:04:53,821 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\MXTmpFiles\system.tmp
-2024-08-01 02:04:53,825 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_timebase_tim.c_save
-2024-08-01 02:04:53,872 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\stm32f4xx_hal_timebase_tim.c
-2024-08-01 02:04:53,881 [INFO] CodeEngine:311 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h_save
-2024-08-01 02:04:53,930 [INFO] CodeEngine:335 - Generated code: D:\STMProj\Prerivanie\Core\Inc\stm32f4xx_hal_conf.h
-2024-08-01 02:04:53,950 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Inc\main.h_save
-2024-08-01 02:04:54,022 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Inc\main.h
-2024-08-01 02:04:54,028 [INFO] CodeEngine:255 - oldGeneratedFile, D:\STMProj\Prerivanie\Core\Src\main.c_save
-2024-08-01 02:04:54,123 [INFO] CodeEngine:279 - Generated code: D:\STMProj\Prerivanie\Core\Src\main.c
-2024-08-01 02:04:54,508 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 247mS.
-2024-08-01 02:04:54,512 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
-2024-08-01 02:04:54,571 [INFO] ConfigFileManager:1531 - The Die is : DIE433
-2024-08-01 02:04:55,423 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 911mS.
-2024-08-01 02:04:55,424 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
-2024-08-01 02:04:55,429 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
-2024-08-01 02:24:35,821 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
-2024-08-01 13:50:39,944 [INFO] Activator:176 - 
+2024-08-07 14:39:57,016 [INFO] Activator:176 - 
 
 
-2024-08-01 13:50:39,946 [INFO] Activator:177 - !SESSION log4j initialized
-2024-08-01 13:50:45,781 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
-2024-08-01 13:50:49,638 [INFO] ApplicationProperties:184 - Using Application install path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
-2024-08-01 13:50:49,657 [INFO] DbMcusXml:78 - Set database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
-2024-08-01 13:50:49,657 [INFO] ApiDb:274 - Set plugin database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
-2024-08-01 13:50:49,657 [WARN] ApiDb:259 - Overriding images path with different value:  => D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
-2024-08-01 13:50:49,664 [INFO] ApiDb:250 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
-2024-08-01 13:50:49,665 [INFO] DbMcusAds:125 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
-2024-08-01 13:50:49,668 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/cs/
-2024-08-01 13:50:49,765 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
-2024-08-01 13:50:49,846 [INFO] DbMcusXml:78 - Set database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
-2024-08-01 13:50:49,846 [INFO] ApiDb:274 - Set plugin database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
-2024-08-01 13:50:49,847 [INFO] ApiDb:261 - Set plugin images path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
-2024-08-01 13:50:49,847 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:49,847 [INFO] ApiDb:250 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
-2024-08-01 13:50:49,847 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:49,847 [INFO] DbMcusAds:125 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
-2024-08-01 13:50:49,847 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:49,847 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:49,847 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/cs/
-2024-08-01 13:50:49,927 [INFO] MainPanel:268 - HeapMemory: 268435456
-2024-08-01 13:50:50,050 [INFO] DbMcusXml:78 - Set database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
-2024-08-01 13:50:50,050 [INFO] ApiDb:274 - Set plugin database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
-2024-08-01 13:50:50,050 [INFO] ApiDb:261 - Set plugin images path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
-2024-08-01 13:50:50,050 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:50,050 [INFO] ApiDb:250 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
-2024-08-01 13:50:50,050 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:50,050 [INFO] DbMcusAds:125 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
-2024-08-01 13:50:50,050 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:50,051 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
-2024-08-01 13:50:50,051 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/cs/
-2024-08-01 13:50:50,067 [INFO] ApplicationProperties:184 - Using Application install path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
-2024-08-01 13:50:50,068 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
-2024-08-01 13:50:50,070 [INFO] PluginManage:310 - Check plugin analytics
-2024-08-01 13:50:50,233 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: 
-2024-08-01 13:50:50,234 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
-2024-08-01 13:50:50,234 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: 
-2024-08-01 13:50:50,237 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
-2024-08-01 13:50:50,237 [INFO] PluginManage:310 - Check plugin cadmodel
-2024-08-01 13:50:50,242 [INFO] CADModel:105 - Init CAD model plugin
-2024-08-01 13:50:50,242 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
-2024-08-01 13:50:50,243 [INFO] PluginManage:310 - Check plugin clock
-2024-08-01 13:50:50,252 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
-2024-08-01 13:50:50,253 [INFO] PluginManage:310 - Check plugin ddr
-2024-08-01 13:50:50,255 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
-2024-08-01 13:50:50,255 [INFO] PluginManage:310 - Check plugin filemanager
-2024-08-01 13:50:50,394 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
-2024-08-01 13:50:50,394 [INFO] PluginManage:310 - Check plugin ipmanager
-2024-08-01 13:50:50,400 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
-2024-08-01 13:50:50,400 [INFO] PluginManage:310 - Check plugin lpbam
-2024-08-01 13:50:50,408 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
-2024-08-01 13:50:50,409 [INFO] PluginManage:310 - Check plugin memorymap
-2024-08-01 13:50:50,421 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
-2024-08-01 13:50:50,421 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
-2024-08-01 13:50:50,428 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
-2024-08-01 13:50:50,428 [INFO] PluginManage:310 - Check plugin pinoutconfig
-2024-08-01 13:50:50,500 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
-2024-08-01 13:50:50,637 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
-2024-08-01 13:50:50,637 [INFO] PluginManage:310 - Check plugin power
-2024-08-01 13:50:50,646 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
-2024-08-01 13:50:50,647 [INFO] PluginManage:310 - Check plugin projectmanager
-2024-08-01 13:50:50,660 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:4)
-2024-08-01 13:50:50,660 [INFO] PluginManage:310 - Check plugin rif
-2024-08-01 13:50:50,667 [INFO] PluginManage:359 - Loaded plugin rif (category:base,tabindex:3)
-2024-08-01 13:50:50,667 [INFO] PluginManage:310 - Check plugin thirdparty
-2024-08-01 13:50:50,788 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
-2024-08-01 13:50:50,788 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
-2024-08-01 13:50:50,788 [INFO] PluginManage:310 - Check plugin tools
-2024-08-01 13:50:50,788 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
-2024-08-01 13:50:50,788 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
-2024-08-01 13:50:50,790 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
-2024-08-01 13:50:50,791 [INFO] PluginManage:310 - Check plugin tutovideos
-2024-08-01 13:50:50,958 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
-2024-08-01 13:50:50,959 [INFO] PluginManage:310 - Check plugin updater
-2024-08-01 13:50:50,974 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
-2024-08-01 13:50:50,974 [INFO] PluginManage:310 - Check plugin userauth
-2024-08-01 13:50:50,980 [INFO] UserAuth:113 - Init User Auth plugin
-2024-08-01 13:50:50,980 [INFO] PluginManage:359 - Loaded plugin userauth (category:base,tabindex:14)
-2024-08-01 13:50:50,980 [INFO] PluginManage:283 - PluginManage : Loaded plugins [18]
-2024-08-01 13:50:51,186 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
-2024-08-01 13:50:51,269 [INFO] CADModel:165 - CPN selected for project level
-2024-08-01 13:50:51,269 [INFO] CADModel:114 - Register for checkConnection events
-2024-08-01 13:50:51,285 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,286 [INFO] PluginManager:220 - loadIPPluginJar : add adc
-2024-08-01 13:50:51,288 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,288 [INFO] PluginManager:220 - loadIPPluginJar : add aes
-2024-08-01 13:50:51,290 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,290 [INFO] PluginManager:220 - loadIPPluginJar : add can
-2024-08-01 13:50:51,291 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,291 [INFO] PluginManager:220 - loadIPPluginJar : add comp
-2024-08-01 13:50:51,293 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,293 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
-2024-08-01 13:50:51,295 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,295 [INFO] PluginManager:220 - loadIPPluginJar : add ddr_ctrl_phy
-2024-08-01 13:50:51,297 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,297 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
-2024-08-01 13:50:51,302 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,302 [INFO] PluginManager:220 - loadIPPluginJar : add dma
-2024-08-01 13:50:51,304 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,305 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
-2024-08-01 13:50:51,307 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,307 [INFO] PluginManager:220 - loadIPPluginJar : add extmemmanager
-2024-08-01 13:50:51,308 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,308 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
-2024-08-01 13:50:51,311 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,311 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
-2024-08-01 13:50:51,316 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,317 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
-2024-08-01 13:50:51,319 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,319 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
-2024-08-01 13:50:51,321 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,321 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
-2024-08-01 13:50:51,325 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,325 [INFO] PluginManager:220 - loadIPPluginJar : add gic
-2024-08-01 13:50:51,328 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,328 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
-2024-08-01 13:50:51,331 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,331 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
-2024-08-01 13:50:51,333 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,333 [INFO] PluginManager:220 - loadIPPluginJar : add hash
-2024-08-01 13:50:51,335 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,335 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
-2024-08-01 13:50:51,337 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,337 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
-2024-08-01 13:50:51,340 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,340 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
-2024-08-01 13:50:51,343 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,343 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
-2024-08-01 13:50:51,350 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,350 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
-2024-08-01 13:50:51,353 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,353 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
-2024-08-01 13:50:51,354 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,354 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
-2024-08-01 13:50:51,360 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,361 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
-2024-08-01 13:50:51,364 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,364 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
-2024-08-01 13:50:51,367 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,367 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
-2024-08-01 13:50:51,370 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,370 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
-2024-08-01 13:50:51,373 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,373 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
-2024-08-01 13:50:51,377 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,379 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
-2024-08-01 13:50:51,380 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,380 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
-2024-08-01 13:50:51,382 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,382 [INFO] PluginManager:220 - loadIPPluginJar : add radio
-2024-08-01 13:50:51,385 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,385 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
-2024-08-01 13:50:51,387 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,387 [INFO] PluginManager:220 - loadIPPluginJar : add sai
-2024-08-01 13:50:51,389 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,389 [INFO] PluginManager:220 - loadIPPluginJar : add spi
-2024-08-01 13:50:51,393 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,394 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
-2024-08-01 13:50:51,395 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,395 [INFO] PluginManager:220 - loadIPPluginJar : add tim
-2024-08-01 13:50:51,397 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,398 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
-2024-08-01 13:50:51,399 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,399 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
-2024-08-01 13:50:51,402 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,402 [INFO] PluginManager:220 - loadIPPluginJar : add ts
-2024-08-01 13:50:51,403 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,403 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
-2024-08-01 13:50:51,404 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,405 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
-2024-08-01 13:50:51,407 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,407 [INFO] PluginManager:220 - loadIPPluginJar : add usart
-2024-08-01 13:50:51,409 [INFO] IPUIPlugin:80 - create IPUIPlugin
-2024-08-01 13:50:51,409 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
-2024-08-01 13:50:51,534 [INFO] CADModel:165 - CPN selected for project level
-2024-08-01 13:50:51,535 [INFO] CADModel:114 - Register for checkConnection events
-2024-08-01 13:50:51,535 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,535 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
-2024-08-01 13:50:51,677 [INFO] CADModel:165 - CPN selected for project level
-2024-08-01 13:50:51,677 [INFO] CADModel:114 - Register for checkConnection events
-2024-08-01 13:50:51,677 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,678 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
-2024-08-01 13:50:51,681 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,768 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,773 [INFO] DbMcusAds:53 - JSON generation date=Thu May 16 12:22:00 MSK 2024 (1715851320667)
-2024-08-01 13:50:51,773 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,813 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
-2024-08-01 13:50:51,891 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,893 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,894 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,894 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
-2024-08-01 13:50:51,894 [FATAL] Updater:334 - Updater called before beeing initialized
-2024-08-01 13:50:51,935 [ERROR] Updater:1164 - MainUpdater not yet initialized. External WinMGr cannot be set.
-2024-08-01 13:50:51,938 [INFO] Updater:1100 - Updater Version found : 6.12.0
-2024-08-01 13:50:51,955 [INFO] ApplicationProperties:184 - Using Application install path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
-2024-08-01 13:50:53,572 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Aug 01, 2024 1:50:53 PM java.util.prefs.WindowsPreferences <init>
-2024-08-01 13:50:53,575 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0xffffffff80000002. Windows RegCreateKeyEx(...) returned error code 5.
-2024-08-01 13:50:53,575 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
-2024-08-01 13:50:53,798 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
-2024-08-01 13:50:53,828 [ERROR] CheckConnectionManager:249 - Problem, Http access forbiden
-2024-08-01 13:50:53,832 [INFO] MainUpdater:2873 - connection check result : 22
-2024-08-01 13:50:53,833 [INFO] MainUpdater:290 - Updater Check For Update Now.
-2024-08-01 13:50:53,833 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
-2024-08-01 13:50:53,840 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
-2024-08-01 13:50:53,841 [INFO] UserAuth:417 - Internet connection configuration mode: 2
-2024-08-01 13:50:53,847 [INFO] UserAuth:417 - Internet connection configuration mode: 2
-2024-08-01 13:50:53,998 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
-2024-08-01 13:50:56,904 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
-2024-08-01 13:50:56,907 [INFO] ThirdParty:978 - Integrity check success = true
-2024-08-01 13:50:56,907 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
-2024-08-01 13:50:56,907 [INFO] IntegrityCheckThread:103 - End integrity checks thread
-2024-08-01 20:47:37,700 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2024-08-07 14:39:57,022 [INFO] Activator:177 - !SESSION log4j initialized
+2024-08-07 14:40:02,549 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-08-07 14:40:04,190 [INFO] ApplicationProperties:184 - Using Application install path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
+2024-08-07 14:40:04,207 [INFO] DbMcusXml:78 - Set database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
+2024-08-07 14:40:04,208 [INFO] ApiDb:274 - Set plugin database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
+2024-08-07 14:40:04,208 [WARN] ApiDb:259 - Overriding images path with different value:  => D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
+2024-08-07 14:40:04,217 [INFO] ApiDb:250 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
+2024-08-07 14:40:04,219 [INFO] DbMcusAds:125 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
+2024-08-07 14:40:04,221 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-08-07 14:40:04,312 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-08-07 14:40:04,384 [INFO] DbMcusXml:78 - Set database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
+2024-08-07 14:40:04,384 [INFO] ApiDb:274 - Set plugin database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
+2024-08-07 14:40:04,384 [INFO] ApiDb:261 - Set plugin images path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
+2024-08-07 14:40:04,384 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,384 [INFO] ApiDb:250 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
+2024-08-07 14:40:04,384 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,384 [INFO] DbMcusAds:125 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
+2024-08-07 14:40:04,385 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,385 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,385 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-08-07 14:40:04,469 [INFO] MainPanel:268 - HeapMemory: 268435456
+2024-08-07 14:40:04,589 [INFO] DbMcusXml:78 - Set database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
+2024-08-07 14:40:04,590 [INFO] ApiDb:274 - Set plugin database path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
+2024-08-07 14:40:04,590 [INFO] ApiDb:261 - Set plugin images path to: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
+2024-08-07 14:40:04,590 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,590 [INFO] ApiDb:250 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
+2024-08-07 14:40:04,590 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,590 [INFO] DbMcusAds:125 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/
+2024-08-07 14:40:04,590 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,590 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\pasha\.stmcufinder\plugins\mcufinder/ => C:\Users\pasha\.stmcufinder\plugins\mcufinder
+2024-08-07 14:40:04,590 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\pasha\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-08-07 14:40:04,607 [INFO] ApplicationProperties:184 - Using Application install path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
+2024-08-07 14:40:04,608 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2024-08-07 14:40:04,609 [INFO] PluginManage:310 - Check plugin analytics
+2024-08-07 14:40:04,758 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: 
+2024-08-07 14:40:04,759 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2024-08-07 14:40:04,759 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: 
+2024-08-07 14:40:04,761 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2024-08-07 14:40:04,761 [INFO] PluginManage:310 - Check plugin cadmodel
+2024-08-07 14:40:04,769 [INFO] CADModel:105 - Init CAD model plugin
+2024-08-07 14:40:04,769 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2024-08-07 14:40:04,769 [INFO] PluginManage:310 - Check plugin clock
+2024-08-07 14:40:04,781 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2024-08-07 14:40:04,781 [INFO] PluginManage:310 - Check plugin ddr
+2024-08-07 14:40:04,784 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2024-08-07 14:40:04,784 [INFO] PluginManage:310 - Check plugin filemanager
+2024-08-07 14:40:04,922 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2024-08-07 14:40:04,922 [INFO] PluginManage:310 - Check plugin ipmanager
+2024-08-07 14:40:04,930 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2024-08-07 14:40:04,930 [INFO] PluginManage:310 - Check plugin lpbam
+2024-08-07 14:40:04,938 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2024-08-07 14:40:04,939 [INFO] PluginManage:310 - Check plugin memorymap
+2024-08-07 14:40:04,952 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2024-08-07 14:40:04,952 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2024-08-07 14:40:04,960 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2024-08-07 14:40:04,960 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2024-08-07 14:40:05,039 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
+2024-08-07 14:40:05,159 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2024-08-07 14:40:05,159 [INFO] PluginManage:310 - Check plugin power
+2024-08-07 14:40:05,171 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2024-08-07 14:40:05,172 [INFO] PluginManage:310 - Check plugin projectmanager
+2024-08-07 14:40:05,185 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:4)
+2024-08-07 14:40:05,185 [INFO] PluginManage:310 - Check plugin rif
+2024-08-07 14:40:05,192 [INFO] PluginManage:359 - Loaded plugin rif (category:base,tabindex:3)
+2024-08-07 14:40:05,193 [INFO] PluginManage:310 - Check plugin thirdparty
+2024-08-07 14:40:05,347 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2024-08-07 14:40:05,347 [INFO] PluginManage:310 - Check plugin tools
+2024-08-07 14:40:05,347 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2024-08-07 14:40:05,347 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2024-08-07 14:40:05,348 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2024-08-07 14:40:05,350 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2024-08-07 14:40:05,350 [INFO] PluginManage:310 - Check plugin tutovideos
+2024-08-07 14:40:05,514 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2024-08-07 14:40:05,514 [INFO] PluginManage:310 - Check plugin updater
+2024-08-07 14:40:05,529 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
+2024-08-07 14:40:05,529 [INFO] PluginManage:310 - Check plugin userauth
+2024-08-07 14:40:05,534 [INFO] UserAuth:113 - Init User Auth plugin
+2024-08-07 14:40:05,534 [INFO] PluginManage:359 - Loaded plugin userauth (category:base,tabindex:14)
+2024-08-07 14:40:05,534 [INFO] PluginManage:283 - PluginManage : Loaded plugins [18]
+2024-08-07 14:40:05,713 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-08-07 14:40:05,793 [INFO] CADModel:165 - CPN selected for project level
+2024-08-07 14:40:05,793 [INFO] CADModel:114 - Register for checkConnection events
+2024-08-07 14:40:05,810 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,810 [INFO] PluginManager:220 - loadIPPluginJar : add adc
+2024-08-07 14:40:05,813 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,813 [INFO] PluginManager:220 - loadIPPluginJar : add aes
+2024-08-07 14:40:05,816 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,816 [INFO] PluginManager:220 - loadIPPluginJar : add can
+2024-08-07 14:40:05,818 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,818 [INFO] PluginManager:220 - loadIPPluginJar : add comp
+2024-08-07 14:40:05,821 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,821 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
+2024-08-07 14:40:05,825 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,825 [INFO] PluginManager:220 - loadIPPluginJar : add ddr_ctrl_phy
+2024-08-07 14:40:05,828 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,828 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
+2024-08-07 14:40:05,832 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,833 [INFO] PluginManager:220 - loadIPPluginJar : add dma
+2024-08-07 14:40:05,836 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,836 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
+2024-08-07 14:40:05,839 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,839 [INFO] PluginManager:220 - loadIPPluginJar : add extmemmanager
+2024-08-07 14:40:05,841 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,841 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
+2024-08-07 14:40:05,845 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,845 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
+2024-08-07 14:40:05,851 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,852 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
+2024-08-07 14:40:05,854 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,854 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
+2024-08-07 14:40:05,856 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,857 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
+2024-08-07 14:40:05,861 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,861 [INFO] PluginManager:220 - loadIPPluginJar : add gic
+2024-08-07 14:40:05,866 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,866 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
+2024-08-07 14:40:05,870 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,870 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
+2024-08-07 14:40:05,873 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,873 [INFO] PluginManager:220 - loadIPPluginJar : add hash
+2024-08-07 14:40:05,876 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,876 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
+2024-08-07 14:40:05,879 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,880 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
+2024-08-07 14:40:05,882 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,882 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
+2024-08-07 14:40:05,886 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,886 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
+2024-08-07 14:40:05,894 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,894 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
+2024-08-07 14:40:05,898 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,898 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
+2024-08-07 14:40:05,900 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,900 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
+2024-08-07 14:40:05,905 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,906 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
+2024-08-07 14:40:05,910 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,910 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
+2024-08-07 14:40:05,913 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,913 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
+2024-08-07 14:40:05,917 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,918 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
+2024-08-07 14:40:05,921 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,921 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
+2024-08-07 14:40:05,927 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,929 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
+2024-08-07 14:40:05,931 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,932 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
+2024-08-07 14:40:05,934 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,935 [INFO] PluginManager:220 - loadIPPluginJar : add radio
+2024-08-07 14:40:05,939 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,939 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
+2024-08-07 14:40:05,943 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,943 [INFO] PluginManager:220 - loadIPPluginJar : add sai
+2024-08-07 14:40:05,945 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,945 [INFO] PluginManager:220 - loadIPPluginJar : add spi
+2024-08-07 14:40:05,951 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,951 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
+2024-08-07 14:40:05,954 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,954 [INFO] PluginManager:220 - loadIPPluginJar : add tim
+2024-08-07 14:40:05,957 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,958 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
+2024-08-07 14:40:05,960 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,960 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
+2024-08-07 14:40:05,963 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,963 [INFO] PluginManager:220 - loadIPPluginJar : add ts
+2024-08-07 14:40:05,965 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,965 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
+2024-08-07 14:40:05,967 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,967 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
+2024-08-07 14:40:05,970 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,970 [INFO] PluginManager:220 - loadIPPluginJar : add usart
+2024-08-07 14:40:05,974 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-07 14:40:05,974 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
+2024-08-07 14:40:06,096 [INFO] CADModel:165 - CPN selected for project level
+2024-08-07 14:40:06,096 [INFO] CADModel:114 - Register for checkConnection events
+2024-08-07 14:40:06,096 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,096 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2024-08-07 14:40:06,234 [INFO] CADModel:165 - CPN selected for project level
+2024-08-07 14:40:06,234 [INFO] CADModel:114 - Register for checkConnection events
+2024-08-07 14:40:06,234 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,234 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2024-08-07 14:40:06,238 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,329 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,335 [INFO] DbMcusAds:53 - JSON generation date=Thu May 16 12:22:00 MSK 2024 (1715851320667)
+2024-08-07 14:40:06,335 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,374 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2024-08-07 14:40:06,464 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,465 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,465 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,466 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2024-08-07 14:40:06,466 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-08-07 14:40:06,506 [ERROR] Updater:1164 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2024-08-07 14:40:06,509 [INFO] Updater:1100 - Updater Version found : 6.12.0
+2024-08-07 14:40:06,527 [INFO] ApplicationProperties:184 - Using Application install path: D:\StmCubeIDE\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
+2024-08-07 14:40:08,099 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Aug 07, 2024 2:40:08 PM java.util.prefs.WindowsPreferences <init>
+2024-08-07 14:40:08,102 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0xffffffff80000002. Windows RegCreateKeyEx(...) returned error code 5.
+2024-08-07 14:40:08,102 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2024-08-07 14:40:08,349 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
+2024-08-07 14:40:08,414 [ERROR] CheckConnectionManager:249 - Problem, Http access forbiden
+2024-08-07 14:40:08,418 [INFO] MainUpdater:2873 - connection check result : 22
+2024-08-07 14:40:08,419 [INFO] MainUpdater:290 - Updater Check For Update Now.
+2024-08-07 14:40:08,419 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-08-07 14:40:08,426 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-08-07 14:40:08,432 [INFO] UserAuth:417 - Internet connection configuration mode: 2
+2024-08-07 14:40:08,441 [INFO] UserAuth:417 - Internet connection configuration mode: 2
+2024-08-07 14:40:08,605 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2024-08-07 14:40:11,463 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2024-08-07 14:40:11,466 [INFO] ThirdParty:978 - Integrity check success = true
+2024-08-07 14:40:11,467 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
+2024-08-07 14:40:11,467 [INFO] IntegrityCheckThread:103 - End integrity checks thread
