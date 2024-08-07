@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "usart.h"
+#include "tim.h"
 
 /* USER CODE END Includes */
 
@@ -34,7 +35,22 @@
 uint8_t dataReceive;
 #define bitcheck(byte,nbit) ((byte) & (1<<(nbit)))
 uint8_t data[3];
-uint8_t pwm;
+uint16_t pwm;
+uint8_t flagReceive;
+
+void Set_PWM_Duty_Cycle(TIM_HandleTypeDef *htim, uint32_t Channel, uint16_t pwm)
+{
+    __HAL_TIM_SET_COMPARE(htim, Channel, pwm);
+}
+
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+          if(huart == &huart1)
+          {
+        	  HAL_UART_Receive_IT(&huart1, &dataReceive, 1);
+          }
+}
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -99,7 +115,9 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-
+	/*HAL_UART_Receive_IT(&huart1, &dataReceive, 1);*/
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+	HAL_UART_Receive_IT(&huart1, &dataReceive, 1);
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -151,10 +169,10 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+
   /* Infinite loop */
   for(;;)
   {
-	HAL_UART_Receive(&huart1, &dataReceive, 3, 1);
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
@@ -174,14 +192,13 @@ void StartBitChecking(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	if(bitcheck(dataReceive, 7)){
-		count++;
-		data[count] = dataReceive;
-	}
-	else{
-		count = 0;
-		data[count] = dataReceive;
-	}
+		if (bitcheck(dataReceive, 7)) {
+			count++;
+			data[count] = dataReceive;
+		} else {
+			count = 0;
+			data[count] = dataReceive;
+		}
     osDelay(1);
   }
   /* USER CODE END StartBitChecking */
@@ -200,11 +217,11 @@ void StartPWM_Set(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	if(bitcheck(data[0]<<1, 7)){
-		pwm = data[1]&255;
+	if(bitcheck(data[0], 6)){
+		pwm = (uint16_t)(data[1]&255)*20;
 	}
 	else{
-		pwm = data[1]&127;
+		pwm = (uint16_t)(data[1]&127)*20;
 	}
     osDelay(1);
   }
@@ -221,10 +238,11 @@ void StartPWM_Set(void *argument)
 void StartLedBlink(void *argument)
 {
   /* USER CODE BEGIN StartLedBlink */
+
   /* Infinite loop */
   for(;;)
   {
-	Set_PWM_Duty_Cycle(&htim1, TIM_CHANNEL_3, pwm);
+	Set_PWM_Duty_Cycle(&htim1, TIM_CHANNEL_1, pwm);
     osDelay(1);
   }
   /* USER CODE END StartLedBlink */

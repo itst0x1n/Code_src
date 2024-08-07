@@ -1,4 +1,7 @@
-../Core/Src/freertos.c:92:6:MX_FREERTOS_Init	1
-../Core/Src/freertos.c:140:6:StartDefaultTask	1
-../Core/Src/freertos.c:159:6:StartBitChecking	2
-../Core/Src/freertos.c:186:6:StartPWM_Set	2
+../Core/Src/freertos.c:41:6:Set_PWM_Duty_Cycle	4
+../Core/Src/freertos.c:47:6:HAL_UART_RxCpltCallback	2
+../Core/Src/freertos.c:116:6:MX_FREERTOS_Init	1
+../Core/Src/freertos.c:169:6:StartDefaultTask	1
+../Core/Src/freertos.c:188:6:StartBitChecking	2
+../Core/Src/freertos.c:214:6:StartPWM_Set	2
+../Core/Src/freertos.c:238:6:StartLedBlink	1

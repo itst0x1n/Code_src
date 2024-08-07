@@ -1,8 +1,7 @@
-flagButton
-time1
-time2
-time
-counter
 dataReceive
 data
 pwm
+count
+flagReceive
+packageReceived
+debug_buffer

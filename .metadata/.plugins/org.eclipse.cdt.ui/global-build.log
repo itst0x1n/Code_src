@@ -1,4 +1,4 @@
-02:02:45 **** Incremental Build of configuration Debug for project Prerivanie ****
+17:09:23 **** Incremental Build of configuration Debug for project Prerivanie ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
 arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,7 +7,194 @@ Finished building target: Prerivanie.elf
 arm-none-eabi-size  Prerivanie.elf 
 arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
    text	   data	    bss	    dec	    hex	filename
-  26016	     96	  21048	  47160	   b838	Prerivanie.elf
+  26992	     96	  21056	  48144	   bc10	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+17:09:26 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-size  Prerivanie.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26992	     96	  21056	  48144	   bc10	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+17:10:04 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  26992	     96	  21056	  48144	   bc10	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+17:11:27 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27168	     96	  21056	  48320	   bcc0	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:02:13 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27008	     96	  21056	  48160	   bc20	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:03:41 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27008	     96	  21056	  48160	   bc20	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:05:18 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27008	     96	  21056	  48160	   bc20	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:19:20 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+../Core/Src/freertos.c: In function 'StartBitChecking':
+../Core/Src/freertos.c:200:32: error: 'i' undeclared (first use in this function)
+  200 |                   debug_buffer[i] = dataReceive;
+      |                                ^
+../Core/Src/freertos.c:200:32: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:49: Core/Src/freertos.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+18:19:37 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27056	     96	  21064	  48216	   bc58	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:22:33 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27056	     96	  21072	  48224	   bc60	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:24:59 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-size  Prerivanie.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27056	     96	  21072	  48224	   bc60	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+18:25:26 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-size  Prerivanie.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27056	     96	  21072	  48224	   bc60	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+18:27:53 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+../Core/Src/freertos.c: In function 'StartBitChecking':
+../Core/Src/freertos.c:205:27: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  205 |                           memset(debug_buffer, 0, 15);
+      |                           ^~~~~~
+../Core/Src/freertos.c:30:1: note: include '<string.h>' or provide a declaration of 'memset'
+   29 | #include "tim.h"
+  +++ |+#include <string.h>
+   30 | 
+../Core/Src/freertos.c:205:27: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  205 |                           memset(debug_buffer, 0, 15);
+      |                           ^~~~~~
+../Core/Src/freertos.c:205:27: note: include '<string.h>' or provide a declaration of 'memset'
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27056	     96	  21072	  48224	   bc60	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:28:41 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+../Core/Src/freertos.c: In function 'StartBitChecking':
+../Core/Src/freertos.c:195:13: warning: unused variable 'i' [-Wunused-variable]
+  195 |         int i = 0;
+      |             ^
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  27008	     96	  21056	  48160	   bc20	Prerivanie.elf
+Finished building: default.size.stdout
+ 
+Finished building: Prerivanie.list
+ 
+18:33:41 **** Incremental Build of configuration Debug for project Prerivanie ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc -o "Prerivanie.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STMProj\Prerivanie\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Prerivanie.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Prerivanie.elf
+ 
+arm-none-eabi-size  Prerivanie.elf 
+arm-none-eabi-objdump -h -S Prerivanie.elf  > "Prerivanie.list"
+   text	   data	    bss	    dec	    hex	filename
+  26688	     96	  21056	  47840	   bae0	Prerivanie.elf
 Finished building: default.size.stdout
  
 Finished building: Prerivanie.list
